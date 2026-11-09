@@ -12,7 +12,8 @@ Setiap developer dapat menambahkan base bot miliknya ke folder masing-masing. Se
 - **GitHub** : [Yowtech](https://github.com/Yowtech)
 - **Base Bot** : [`Base-Bot/Yowtech/Base.zip`](Base-Bot/Yowtech/Base.zip)
 
-- **Partner** :
+
+- **Developer** :
 - **GitHub** :
 - **Base Bot** :
 
