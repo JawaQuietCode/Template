@@ -1,98 +1,68 @@
-# Yowtech Bot Template
+# Base Bot Repository
 
-Template bot WhatsApp minimal berbasis Yowtech Baileys fork.
+Repository ini dibuat sebagai tempat berbagi dan mendokumentasikan berbagai **Base Bot WhatsApp** yang dikembangkan oleh Yowtech, partner, dan contributor.
 
-- **Base Bot** : [`Assets/Base-Bot/Yowtech.zip`](Assets/Base-Bot/Yowtech.zip)
+Tujuan repository ini adalah menyediakan base bot yang dapat digunakan sebagai fondasi project baru, sekaligus menjaga dokumentasi penggunaan setiap base bot tetap berada di satu tempat bersama file base bot-nya.
+
+Setiap developer dapat menambahkan base bot miliknya ke folder masing-masing. Setiap folder developer **wajib memiliki `README.md`** yang menjelaskan cara instalasi, konfigurasi, struktur, dan cara menjalankan base bot tersebut.
+
+## Developer Utama
+
 - **Developer** : Yowtech
-- **At** : 9 November 2026
 - **GitHub** : [JawaQuietCode](https://github.com/JawaQuietCode)
-- **License** : MIT
+- **Base Bot** : [`Base-Bot/Yowtech/Base.zip`](Base-Bot/Yowtech/Base.zip)
 
-## Tentang Template
+## Kontribusi Base Bot
 
-Template ini berisi sistem dasar bot WhatsApp dari Yowtech yang siap dikembangkan menjadi bot baru. Isi template difokuskan pada sistem inti, tanpa plugin produksi dari SC utama.
-
-Plugin contoh yang disertakan hanya `Ping.js`, sehingga struktur pembuatan plugin dapat dipelajari dan dijadikan dasar untuk plugin berikutnya.
-
-Fitur sistem yang tersedia meliputi:
-
-- Core event handler untuk pesan, koneksi, group, presence, reaction, dan penghapusan pesan.
-- Dynamic plugin loader dengan hot reload.
-- Serialisasi pesan, quoted message, media, command, sender, dan permission.
-- Database dasar untuk user, group, OTP, dan settings.
-- Pairing code WhatsApp.
-- Struktur folder modular pada `Cube/Core` dan `Cube/Lib`.
-
-## Slot Partner dan Contributor
-
-Repository ini juga menyediakan slot untuk base bot milik partner atau contributor Yowtech. Tambahkan file ZIP mereka ke folder berikut:
+Partner atau contributor dapat menambahkan base bot dengan pola berikut:
 
 ```text
-Assets/Base-Bot/Partners/<Nama-Partner>.zip
+Base-Bot/<Partner>/Base.zip
+Base-Bot/<Partner>/README.md
 ```
 
-Base bot utama tetap berada di:
+Contoh:
 
 ```text
-Assets/Base-Bot/Yowtech.zip
+Base-Bot/PartnerName/
+├── Base.zip
+└── README.md
 ```
 
-## Isi Base Bot
+`README.md` wajib berada di dalam folder developer yang sama dengan `Base.zip`. Dokumentasi minimal harus menjelaskan:
 
-Setelah `Yowtech.zip` diekstrak, tersedia:
-
-```text
-Assets/
-└── Environment/
-Cube/
-├── Core/
-└── Lib/
-database/
-plugins/
-└── Ping.js
-index.js
-package.json
-settings.js
-README.md
-```
-
-## Instalasi
-
-1. Download [`Yowtech.zip`](Assets/Base-Bot/Yowtech.zip).
-2. Ekstrak isi ZIP ke folder project bot.
-3. Edit `settings.js` dan isi nomor bot, nomor owner, pairing code, serta konfigurasi lainnya.
-4. Install dependency:
-
-```bash
-npm install
-```
-
-5. Jalankan bot:
-
-```bash
-npm start
-```
-
-6. Tambahkan plugin baru ke folder `plugins/`. Sistem akan memuat plugin secara dinamis dan melakukan hot reload ketika file plugin berubah.
-
-## Plugin Contoh
-
-```text
-.ping
-.p
-```
-
-> Memeriksa respons, latensi, uptime, dan penggunaan memory bot.
+- Nama base bot dan developer.
+- Tanggal atau versi rilis.
+- Dependency yang diperlukan.
+- Cara instalasi dan menjalankan bot.
+- Konfigurasi yang perlu diubah.
+- Struktur dasar base bot.
+- Command atau plugin bawaan.
+- Catatan lisensi dan kredit bila diperlukan.
 
 ## Struktur Repository
 
-Repository ini sengaja dibuat sederhana agar dokumentasi, base bot utama, dan base bot partner dapat dibagikan dalam satu tempat:
-
 ```text
 README.md
-Assets/
-└── Base-Bot/
-    ├── Yowtech.zip
-    └── Partners/
-        └── <Nama-Partner>.zip
+Base-Bot/
+└── Yowtech/
+    ├── Base.zip
+    └── README.md
 ```
+
+Base bot partner/contributor akan memiliki pola yang sama:
+
+```text
+Base-Bot/<Partner>/
+├── Base.zip
+└── README.md
+```
+
+## Aturan Penambahan Base Bot
+
+1. Gunakan satu folder developer untuk satu base bot.
+2. Nama file base bot wajib `Base.zip`.
+3. Sertakan `README.md` di folder yang sama.
+4. Jangan memasukkan session, credential, token, API key, atau data pribadi ke dalam ZIP.
+5. Pastikan ZIP dapat diekstrak dan mengikuti instruksi pada README masing-masing.
+6. Pertahankan struktur repository agar base bot dari developer lain mudah ditemukan.
