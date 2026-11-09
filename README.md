@@ -6,11 +6,15 @@ Tujuan repository ini adalah menyediakan base bot yang dapat digunakan sebagai f
 
 Setiap developer dapat menambahkan base bot miliknya ke folder masing-masing. Setiap folder developer **wajib memiliki `README.md`** yang menjelaskan cara instalasi, konfigurasi, struktur, dan cara menjalankan base bot tersebut.
 
-## Developer Utama
+## Developer & Partner
 
 - **Developer** : Yowtech
-- **GitHub** : [JawaQuietCode](https://github.com/JawaQuietCode)
+- **GitHub** : [Yowtech](https://github.com/Yowtech)
 - **Base Bot** : [`Base-Bot/Yowtech/Base.zip`](Base-Bot/Yowtech/Base.zip)
+
+- **Partner** :
+- **GitHub** :
+- **Base Bot** :
 
 ## Kontribusi Base Bot
 
